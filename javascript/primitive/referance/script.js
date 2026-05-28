@@ -12,7 +12,7 @@ let primitive2 = 42;
 
 console.log("Primitive Match:", primitive1 === primitive2);
 
-//REFERENCE DATA TYPES COMPARISON
+//refrence datatypes camparison
 
 let originalReference = { status: "Initial Value" };
 let copiedReference = originalReference;
