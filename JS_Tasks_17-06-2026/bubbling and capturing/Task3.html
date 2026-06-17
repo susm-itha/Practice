@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbling and capturing</title>
+</head>
+<body>
+    <style>
+        #grandparent {
+            padding: 10px;
+            width: 150px;
+            background-color: lightblue;
+        }
+
+        #parent {
+            padding: 30px;
+            background-color: lightgreen;
+        }
+
+        #child {
+            padding: 20px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="grandparent">
+        Grand Parent
+        <div id="parent">
+            Parent
+            <button id="child">Child Button</button>
+        </div>
+    </div>
+
+    <script src="Task3.js"></script>
+</body>
+</html>
