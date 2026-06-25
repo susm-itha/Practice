@@ -1,0 +1,36 @@
+// Synchronous Execution	Asynchronous Execution
+// Tasks execute one after another in sequence.	Tasks can start now and finish later without blocking other code.
+// Each task waits for the previous task to complete.	Other tasks can continue while waiting for a task to complete.
+// Blocking in nature.	Non-blocking in nature.
+// Simpler and easier to understand.	More efficient for time-consuming operations.
+// Can make the application slow if a task takes longer.	Improves performance and responsiveness.
+// Execution follows a linear flow.	Execution flow may not be sequential.
+// Used for simple operations that complete quickly.	Used for API calls, file operations, timers, and network requests.
+// Example Flow
+
+Synchronous
+
+console.log("Task 1");
+console.log("Task 2");
+console.log("Task 3");
+
+
+
+Asynchronous
+
+console.log("Task 1");
+
+setTimeout(() => {
+    console.log("Task 2");
+}, 2000);
+
+console.log("Task 3");
+
+
+
+
+//Key Points
+// Synchronous = Execute tasks one by one, waiting for each to finish.
+// Asynchronous = Start a task and continue executing other tasks without waiting.
+// JavaScript is single-threaded, but it handles asynchronous operations using the Event Loop, Web APIs, and Callback Queue.
+// Common asynchronous methods: setTimeout(), setInterval(), Promises, async/await, and API requests (fetch()).

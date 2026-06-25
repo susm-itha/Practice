@@ -1,0 +1,9 @@
+An Object in JavaScript is a collection of key-value pairs used to store related data and functionality together.
+Think of an object as a real-world entity. For example, a student has properties like name, age, and grade. Instead of storing these values in separate variables, we can store them in a single object.
+
+Objects store data as key-value pairs.
+Properties hold values.
+Methods are functions inside objects.
+Use dot notation or bracket notation to access properties.
+Properties can be added, updated, or deleted dynamically.
+this refers to the current object.

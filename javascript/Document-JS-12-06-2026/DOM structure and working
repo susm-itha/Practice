@@ -1,0 +1,23 @@
+DOM (Document Object Model) is a tree-like representation of an HTML document. Every HTML element becomes an object (node) that JavaScript can access and manipulate.
+Document → Entire webpage.
+html → Root element.
+head → Contains metadata.
+title → Browser tab title.
+body → Visible page content.
+h1 and p → Child elements of body.
+Text inside elements becomes text nodes.
+structure
+Document
+│
+└── html
+    │
+    ├── head
+    │   └── title
+    │       └── "DOM Example"
+    │
+    └── body
+        ├── h1
+        │   └── "Welcome to DOM"
+        │
+        └── p
+            └── "This is a paragraph."

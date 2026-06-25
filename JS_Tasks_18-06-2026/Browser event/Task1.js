@@ -16,8 +16,10 @@ document.getElementById("changeResult").textContent =
 "Selected Course: " + this.value;
 });
 // Submit Event
-document.getElementById("myForm").addEventListener("submit", function (event) {
+document.getElementById("myForm").addEventListener("submit", function () {
 event.preventDefault(); // Prevent page refresh
 document.getElementById("submitResult").textContent =
 "Form Submitted Successfully!";
 });
+
+
