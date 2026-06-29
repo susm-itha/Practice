@@ -1,0 +1,25 @@
+body{
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+.image-box{
+    width: 80%;
+    height: 150px;
+    margin: 10px auto;
+
+    border: 4px dashed orange;
+    border-radius: 15px;
+    
+    color: white;
+    font-size: 10px;
+    text-align: left;
+    line-height: 150px;
+}
+@media(max-width:600px){
+    .image-box{
+        width: 95%;
+        height: 100px;
+        line-height: 120px;
+        font-size: 10px;
+    }
+}

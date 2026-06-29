@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        h1{
+            color: rgb(223, 223, 241);
+            text-align: left;
+            margin: 10px;
+        }
+
+        
+        .box{
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: lightyellow;
+        }
+
+        
+        #special{
+            background-color: lightgreen;
+        }
+
+        
+        h2,p{
+            margin: 10px 0;
+        }
+
+        
+        .box p{
+            color: darkred;
+        }
+
+   
+        .parent > h3{
+            color: blue;
+        }
+
+        
+        h3 + p{
+            font-weight: bold;
+        }
+
+        
+        h4 ~ p{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: lightblue; padding:15px;">
+        CSS Concepts
+    </h1>
+
+    <div class="box">
+        <h2>Selectors</h2>
+        <p>This paragraph uses descendant selector.</p>
+    </div>
+
+    <div class="box parent" id="special">
+        <h3>Child Selector</h3>
+        <p>This paragraph is next to h3</p>
+
+        <h4>General Sibling</h4>
+        <p>Paragraph 1 after h4.</p>
+        <p>Paragraph 2 after h4.</p>
+    </div>
+</body>
+</html>

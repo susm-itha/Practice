@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background properties</title>
+</head>
+<body>
+     <style>
+        .box{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 10px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        /* 1. Background Color */
+        .color-box{
+            background-color: tomato;
+            color: black;
+        }
+
+        /* 2. Background Image */
+        .image-box{
+            background-image: url("https://picsum.photos/150");
+            background-color: lightgray;
+            color: black;
+        }
+
+        /* 3. Background Repeat */
+        .repeat-box{
+            background-image: url("https://picsum.photos/80");
+            background-repeat: repeat;
+            color: black;
+        }
+
+        /* 4. Background Position */
+        .position-box{
+            background-image: url("https://picsum.photos/120");
+            background-position: right bottom;
+            background-color: lightblue;
+            color: black;
+        }
+
+        /* 5. Background Size */
+        .size-box{
+            background-image: url("https://picsum.photos/300");
+            background-size: cover;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box color-box">
+        Background Color
+    </div>
+
+    <div class="box image-box">
+        Background Image
+    </div>
+
+    <div class="box repeat-box">
+        Background Repeat
+    </div>
+
+    <div class="box position-box">
+        Background Position
+    </div>
+
+    <div class="box size-box">
+        Background Size
+    </div>
+</body>
+</html>
