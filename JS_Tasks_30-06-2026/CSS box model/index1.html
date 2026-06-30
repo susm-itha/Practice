@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collapse margin</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        h2{
+            color: blue;
+        }
+        .box1{
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+        .box2{
+            background-color: lightgreen;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .overflow-box{
+            width: 220px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+        }
+
+        .visible{
+            overflow: visible;
+        }
+
+        .hidden{
+            overflow: hidden;
+        }
+
+        .scroll{
+            overflow: scroll;
+        }
+
+        .auto{
+            overflow: auto;
+        }
+        .outline-box{
+            width: 220px;
+            padding: 20px;
+            margin-top: 40px;
+            border: 4px solid blue;
+            outline: 4px dashed red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Margin Collapse</h2>
+
+    <div class="box1">
+        Box 1 (margin-bottom:50px)
+    </div>
+
+    <div class="box2">
+        Box 2 (margin-top:30px)
+    </div>
+
+    <p>
+        Actual gap is <b>50px</b>, not 80px because the larger margin wins.
+    </p>
+
+    <hr>
+
+    <h2>Overflow Visible</h2>
+
+    <div class="overflow-box visible">
+        This is a long text. It comes outside the box because overflow is visible.
+    </div>
+
+    <br><br><br>
+
+    <h2>Overflow Hidden</h2>
+
+    <div class="overflow-box hidden">
+        This is a long text. Extra content is hidden and cannot be seen.
+    </div>
+
+    <h2>Overflow Scroll</h2>
+
+    <div class="overflow-box scroll">
+        This is a long text. Scrollbars appear so you can scroll and read the remaining content.
+    </div>
+
+    <h2>Overflow Auto</h2>
+
+    <div class="overflow-box auto">
+        This is a long text. Scrollbars appear only when the content becomes larger than the box.
+    </div>
+
+    <hr>
+
+    <h2>Border and Outline</h2>
+
+    <div class="outline-box">
+        Blue = Border <br>
+        Red Dashed = Outline
+    </div>
+</body>
+</html>
