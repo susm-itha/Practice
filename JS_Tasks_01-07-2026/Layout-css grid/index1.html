@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+</head>
+<body>
+     <style>
+
+.dashboard{
+    width:500px;
+    margin:20px;
+    border:2px solid black;
+    padding:10px;
+
+    display:grid;
+
+    /* Creates 3 columns */
+    grid-template-columns:150px 150px 150px;
+
+    /* Creates rows */
+    grid-template-rows:60px 100px 100px 60px;
+
+    /* Space between items */
+    gap:10px;
+
+    /* Horizontal alignment */
+    justify-items:center;
+
+    /* Vertical alignment */
+    align-items:center;
+}
+
+.box{
+    width:90%;
+    height:80%;
+    border:1px solid black;
+    background:lightblue;
+
+    /* Center text horizontally and vertically */
+    place-items:center;
+    display:grid;
+}
+
+/* Header takes full width */
+.header{
+    grid-column:1 / 4;
+    background:lightcoral;
+}
+
+/* Sidebar takes two rows */
+.sidebar{
+    grid-row:2 / 4;
+    background:lightgreen;
+}
+
+/* Main content area */
+.main{
+    grid-column:2 / 4;
+    background:lightyellow;
+}
+
+/* Cards */
+.card1{
+    background:lightpink;
+}
+
+.card2{
+    background:lightskyblue;
+}
+
+/* Footer takes full width */
+.footer{
+    grid-column:1 / 4;
+    background:orange;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <div class="box header">Header</div>
+
+    <div class="box sidebar">Sidebar</div>
+
+    <div class="box main">Main Content</div>
+
+    <div class="box card1">Card 1</div>
+
+    <div class="box card2">Card 2</div>
+
+    <div class="box footer">Footer</div>
+
+</div>
+
+</body>
+</html>
