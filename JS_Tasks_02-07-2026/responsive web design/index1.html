@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive webpages</title>
+</head>
+<body>
+    <title>Responsive Layout</title>
+    <style>
+
+        /* Header */
+        .header{
+            background: lightblue;
+            padding:20px;
+            text-align:center;
+        }
+
+        /* Navigation using Flexbox */
+        .nav{
+            display:flex;
+            justify-content:space-around;
+            background:gray;
+            padding:10px;
+        }
+
+        .nav a{
+            color:white;
+            text-decoration:none;
+        }
+
+        /* Main content using Grid */
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap:10px;
+            padding:10px;
+        }
+
+        .box{
+            background:lightgreen;
+            padding:20px;
+            text-align:center;
+        }
+
+        /* Tablet */
+        @media(max-width:768px){
+            .container{
+                grid-template-columns:1fr 1fr;
+            }
+        }
+
+        /* Mobile */
+        @media(max-width:500px){
+
+            .nav{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .container{
+                grid-template-columns:1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Responsive Webpage</h1>
+    </div>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="box">Sidebar</div>
+        <div class="box">Main Content</div>
+        <div class="box">Ads</div>
+    </div>
+</body>
+</html>

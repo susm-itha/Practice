@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+</head>
+<body>
+    <style>
+
+.box{
+    width: 250px;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background: gray;
+}
+
+/* Mobile */
+@media (max-width:100px){
+    .box{
+        background:red;
+    }
+}
+
+/* Tablet */
+@media (min-width:200px){
+    .box{
+        background:green;
+    }
+}
+
+/* Laptop */
+@media (min-width:300px) {
+    .box{
+        background:orange;
+    }
+}
+
+/* Desktop */
+@media (min-width:400px){
+    .box{
+        background:rgb(88, 133, 146);
+
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="box">
+    Responsive Box
+</div>
+
+</body>
+</html>
+
+
