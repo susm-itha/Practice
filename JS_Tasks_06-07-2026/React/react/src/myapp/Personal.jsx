@@ -1,4 +1,4 @@
-function personal(){
+function Personal(){
     return(
         <div>
             <h1>Personal Information</h1>
@@ -24,4 +24,4 @@ function personal(){
     );
 
 }
-export default personal
+export default Personal;
