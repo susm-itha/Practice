@@ -10,6 +10,12 @@ import PtooC from "./react_08-07-2026/pages/PtooC_Communication/PtooC";
 import CtoP from "./react_08-07-2026/pages/CtoP_communications/CtoP";
 import CtoC from "./react_08-07-2026/pages/CtoC/CtoC";
 import MiniAssignment from "./react_08-07-2026/pages/MiniAssignment/MiniAssignment";
+import Local from "./react_09-07-2026/Pages/localstate/LocalState";
+import Global from "./react_09-07-2026/Pages/globalstate/GlobalState";
+import State from "./react_09-07-2026/Pages/states/States";
+
+
+
 
 
 
@@ -28,8 +34,10 @@ function App(){
       <Route path='/ctopcommunications' element={<CtoP/>}/>
       <Route path='/ctoc' element={<CtoC/>}/>
       <Route path='/MiniAssignment' element={<MiniAssignment/>}/>
-      
-      
+      <Route path='/Local' element={<Local/>}/>
+      <Route path='/Global' element={<Global/>}/>
+      <Route path='/State' element={<State/>}/>
+     
       </Routes>   
        </BrowserRouter>
 
