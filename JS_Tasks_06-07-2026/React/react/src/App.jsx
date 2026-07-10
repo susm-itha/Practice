@@ -13,6 +13,15 @@ import MiniAssignment from "./react_08-07-2026/pages/MiniAssignment/MiniAssignme
 import Local from "./react_09-07-2026/Pages/localstate/LocalState";
 import Global from "./react_09-07-2026/Pages/globalstate/GlobalState";
 import State from "./react_09-07-2026/Pages/states/States";
+import Fetch from "./react_10-07-2026/FetchAPI/Fetch";
+import Axios from "./react_10-07-2026/AxiosAPI/Axios";
+import Async from "./react_10-07-2026/AsyncAPI/Async";
+import Error from "./react_10-07-2026/ErrorHandling/ErrorHandling";
+import Users from "./react_10-07-2026/Components/Users";
+
+
+
+
 
 
 
@@ -37,9 +46,13 @@ function App(){
       <Route path='/Local' element={<Local/>}/>
       <Route path='/Global' element={<Global/>}/>
       <Route path='/State' element={<State/>}/>
-     
+      <Route path='/Fetch' element={<Fetch/>}/>
+      <Route path='/Axios' element={<Axios/>}/> 
+      <Route path='/Async' element={<Async/>}/>
+      <Route path='/Error' element={<Error/>}/> 
+      <Route path='/Users' element={<Users/>}/>   
       </Routes>   
-       </BrowserRouter>
+      </BrowserRouter>
 
   )
 }
