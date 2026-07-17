@@ -1,0 +1,106 @@
+<!-- React Basics
+React is a JavaScript library used to build user interfaces.
+React uses components to create reusable UI.
+JSX allows writing HTML inside JavaScript.
+
+2. Components
+Functional Components use hooks and are the modern approach.
+Class Components use lifecycle methods and this.
+
+3. Props
+Props are used to pass data from parent to child.
+Props are read-only.
+
+4. State
+State stores dynamic data inside a component.
+useState is used to manage state in functional components.
+
+5. Component Communication
+Parent → Child using props.
+Child → Parent using callback functions.
+Sibling → Sibling using lifting state up or Context API.
+
+6. Context API
+Used to share data globally without prop drilling.
+createContext(), Provider, and useContext() are the main parts.
+
+7. useReducer
+Used for managing complex state.
+Uses a reducer function and dispatch().
+
+8. Redux Toolkit
+Used for application-wide state management.
+Main concepts:
+Store
+Slice
+Reducer
+Action
+Provider
+useSelector()
+useDispatch()
+
+9. API Handling
+Fetch data using Fetch API or Axios.
+Handle loading and error states.
+
+10. React Folder Structure
+Organize files into folders like:
+components
+pages
+context
+redux
+hooks
+services
+assets
+
+Commonly Faced Issues
+Issue:
+useState is not defined	
+props is not defined	
+No routes matched location	
+Element type is invalid	
+Context.Provider value is required	
+UserProvider does not provide an export	
+npm run dev error	
+Missing script: start/dev	
+Axios not working	
+API data not showing	
+Component not rendering	
+State not updating	
+Infinite re-render	
+Undefined values	
+CSS not applying	
+
+Cause:
+Hook not imported
+Props not received in component
+Incorrect route path
+Wrong import/export
+Missing value prop
+Incorrect export/import
+Wrong folder or missing package.json
+Script not present in package.json
+Package not installed
+Wrong URL or async handling
+Export/import mistake
+Direct state modification
+State updated during render
+Incorrect props or state
+CSS file not imported
+
+
+solution:
+Import useState from React
+Check <Route> path and URL
+Verify default and named exports
+Pass value to Provider
+Match export and import names
+Open correct project folder and install dependencies
+Use the correct script (npm run dev for Vite, npm start for CRA)
+Run npm install axios
+Verify API URL and use await or .then() correctly
+Check component export and import
+Always use state setter function
+Update state inside event handlers or useEffect
+Initialize state and check props
+Import CSS file into the component
