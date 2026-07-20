@@ -1,0 +1,10 @@
+Conditional Rendering means displaying different UI (User Interface) based on a condition. React checks the condition and renders the appropriate component or content
+
+syntax : condition ? <Component1 /> : <Component2 />
+
+we need Conditional Rendering
+Show different content for different users.
+Display loading while data is being fetched.
+Show login page if user is not authenticated.
+Hide or show components.
+Display "No Data Found" when data is empty.
