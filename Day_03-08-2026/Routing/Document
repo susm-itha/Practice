@@ -1,0 +1,44 @@
+<!-- Browser Routing
+Definition
+Browser Routing is the process of navigating between different pages in a React application without refreshing the browser.
+
+React uses React Router to handle browser routing.
+
+Syntax
+<BrowserRouter>
+  <App />
+</BrowserRouter> -->
+
+Client-Side Routing
+Definition
+Client-Side Routing means navigation happens inside the browser without requesting a new page from the server.
+
+React Router uses Client-Side Routing.
+Advantages
+Very Fast
+No page reload
+Better user experience
+Less server requests
+
+Disadvantages
+Initial bundle size is larger.
+JavaScript must load before the app works.
+
+
+Server-Side Routing
+Definition
+Server-Side Routing means every page request goes to the server.
+
+The server sends a new HTML page every time.
+Advantages
+Good SEO
+Initial page loads with HTML.
+Works even if JavaScript is disabled (depending on the application).
+
+Disadvantages
+Slower navigation
+Page refresh every time
+More server requests
+
+
+
