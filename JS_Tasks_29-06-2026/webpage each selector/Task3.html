@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+</head>
+<body>
+    <style>
+
+        /* Universal Selector */
+        *{
+            font-family: Arial;
+        }
+
+        /* Element Selector */
+        h2{
+            color: rgb(101, 101, 146);
+        }
+
+        /* Class Selector */
+        .highlight{
+            color: rgb(15, 15, 15);
+        }
+
+        /* ID Selector */
+        #mainTitle{
+            color: rgb(222, 145, 145);
+        }
+
+        /* Group Selector */
+        h3, h4{
+            color: rgb(125, 186, 125);
+        }
+
+        /* Descendant Selector */
+        .box p{
+            color: rgb(213, 161, 213);
+        }
+
+        /* Child Selector */
+        .parent > p{
+            color: rgb(196, 168, 115);
+        }
+
+        /* Adjacent Sibling Selector */
+        h5 + p{
+            color: rgb(219, 137, 137);
+        }
+
+        /* General Sibling Selector */
+        h6 ~ p{
+            color: teal;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">ID Selector Example</h1>
+
+    <h2>Element Selector</h2>
+
+    <p class="highlight">Class Selector</p>
+
+    <h3>Group Selector</h3>
+    <h4>Group Selector</h4>
+
+    <div class="box">
+        <p>Descendant Selector Paragraph</p>
+    </div>
+
+    <div class="parent">
+        <p>Child Selector Paragraph</p>
+
+        <div>
+            <p>This nested paragraph is not selected.</p>
+        </div>
+    </div>
+
+    <h5>Adjacent Sibling Selector</h5>
+    <p>This paragraph is selected using + selector.</p>
+    <p>This paragraph is not selected.</p>
+
+    <h6>General Sibling Selector</h6>
+    <p>Paragraph 1 selected.</p>
+    <p>Paragraph 2 selected.</p>
+    <p>Paragraph 3 selected.</p>
+
+
+</body>
+</html>

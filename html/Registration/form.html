@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<div class="form">
+    <h2>NYB Registration</h2>
+    
+     <form method="POST"> 
+      
+     
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName"required>
+      </div>
+
+     
+      <div class="form-group">
+        <label for="empId">Employee ID</label>
+        <input type="text" id="empId" name="empId"required>
+      </div>
+
+     
+      <div class="form">
+        <label for="email">Office Email Address</label>
+        <input type="email" id="email" name="email"required>
+      </div>
+
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+          <option value="" disabled selected>Select your department</option>
+          <option value="engineering">Engineering / IT</option>
+          <option value="hr">Associate Software Engineer</option>
+        </select>
+      </div>
+      <button type="submit">Register Employee</button>
+
+    </form>
+  </div>
+</body>
+</html>

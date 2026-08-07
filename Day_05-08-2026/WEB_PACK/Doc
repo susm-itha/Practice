@@ -1,0 +1,75 @@
+What is Webpack?
+Definition
+Webpack is a JavaScript Module Bundler. It takes all the files of a React application (JavaScript, CSS, Images, Fonts, etc.), processes them, and combines them into one or more optimized bundle files.
+
+Webpack is a tool that bundles multiple project files into optimized files for the browser.
+
+Why do we use Webpack?
+Combines files into one bundle
+Optimizes performance
+Converts modern JavaScript to browser-supported JavaScript
+Handles CSS and Images
+Supports Hot Reloading
+Reduces file size
+
+Module Bundling
+Definition
+Module Bundling means combining multiple modules/files into one or more bundle files.
+
+Example Files
+Header.jsx
+Footer.jsx
+Home.jsx
+App.jsx
+
+Types of Modules
+JavaScript Module
+App.jsx
+
+CSS Module
+style.css
+
+Image Module
+logo.png
+
+Font Module
+Roboto.ttf
+
+JSON Module
+data.json
+
+
+Entry Configuration
+Definition
+Entry tells Webpack where the application starts.
+
+Usually
+src/index.js
+
+Syntax
+entry: "./src/index.js"
+React (Vite)
+
+Example
+module.exports = {
+  entry: "./src/main.jsx",
+};
+
+Output Configuration
+Definition
+Output tells Webpack where to save the generated bundle.
+
+Syntax
+output: {
+ filename: "bundle.js",
+ path: path.resolve(__dirname, "dist")
+}
+
+Example
+dist
+   bundle.js
+Entry                Output
+Entry	             Output
+Starting point	   Ending point
+Reads files	       Creates files
+Input	           Output Bundle

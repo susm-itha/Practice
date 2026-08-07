@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<body>
+    <style>
+
+        /* CSS Specificity */
+        p{
+            color: blue;
+        }
+
+        .text{
+            color: green;
+        }
+
+        #message{
+            color: red !important;
+        }
+
+        /* Flexbox Alignment */
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        /* Grid Alignment */
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            place-items: center;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .grid-item{
+            background-color: lightgreen;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+        }
+
+        /* Media Queries */
+
+        /* Mobile */
+        @media (max-width:600px){
+            .flex-container{
+                flex-direction: column;
+            }
+
+            .grid-container{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width:601px) and (max-width:900px){
+            .grid-container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        /* Desktop */
+        @media (min-width:901px){
+            .grid-container{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Specificity -->
+    <p class="text" id="message">
+        CSS Specificity 
+    </p>
+
+    <!-- Flexbox -->
+    <div class="flex-container">
+        <div class="box">Flex 1</div>
+        <div class="box">Flex 2</div>
+        <div class="box">Flex 3</div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid-container">
+        <div class="grid-item">Grid 1</div>
+        <div class="grid-item">Grid 2</div>
+        <div class="grid-item">Grid 3</div>
+    </div>
+</body>
+</html>

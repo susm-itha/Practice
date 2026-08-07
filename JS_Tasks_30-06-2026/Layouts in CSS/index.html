@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout in css</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial;
+            margin:20px;
+        }
+
+        h2{
+            background: lightgray;
+            padding:10px;
+        }
+
+        .block{
+            display:block;
+            background:lightblue;
+            padding:10px;
+            margin:5px 0;
+        }
+
+        .inline{
+            display:inline;
+            background:lightgreen;
+            padding:10px;
+        }
+
+        .inline-block{
+            display:inline-block;
+            width:120px;
+            height:50px;
+            background:orange;
+            text-align:center;
+            line-height:50px;
+            margin:5px;
+        }
+
+        .hide{
+            display:none;
+        }
+
+
+        .box{
+            width:150px;
+            height:60px;
+            padding:10px;
+            margin:10px;
+        }
+
+        .static{
+            position:static;
+            background:#ddd;
+        }
+
+        .relative{
+            position:relative;
+            left:40px;
+            background:lightgreen;
+        }
+
+        .parent{
+            position:relative;
+            width:350px;
+            height:180px;
+            border:3px solid black;
+            margin-top:20px;
+        }
+
+        .absolute{
+            position:absolute;
+            top:20px;
+            right:20px;
+            background:orange;
+        }
+
+        .sticky{
+            position:sticky;
+            top:0;
+            background:yellow;
+            padding:10px;
+        }
+
+        .fixed{
+            position:fixed;
+            bottom:10px;
+            right:10px;
+            background:red;
+            color:white;
+            padding:10px;
+        }
+
+        .left{
+            float:left;
+            width:150px;
+            height:100px;
+            background:skyblue;
+            text-align:center;
+            line-height:100px;
+        }
+
+        .right{
+            float:right;
+            width:150px;
+            height:100px;
+            background:pink;
+            text-align:center;
+            line-height:100px;
+        }
+
+        .clear{
+            clear:both;
+            background:lightgreen;
+            padding:20px;
+            margin-top:20px;
+        }
+
+        .space{
+            height:700px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="sticky">
+        Sticky Header (sticks to top while scrolling)
+    </div>
+
+    <h2>Display Properties</h2>
+
+    <div class="block">Block Element 1</div>
+    <div class="block">Block Element 2</div>
+
+    <br>
+
+    <span class="inline">Inline 1</span>
+    <span class="inline">Inline 2</span>
+
+    <br><br>
+
+    <div class="inline-block">Box 1</div>
+    <div class="inline-block">Box 2</div>
+
+    <div class="hide">You cannot see me because display:none</div>
+
+
+    <h2>Position Properties</h2>
+
+    <div class="box static">
+        Static Position
+    </div>
+
+    <div class="box relative">
+        Relative Position
+    </div>
+
+    <div class="parent">
+        Parent Container
+
+        <div class="box absolute">
+            Absolute Position
+        </div>
+    </div>
+
+
+    <h2>Float and Clear</h2>
+
+    <div class="left">
+        Float Left
+    </div>
+
+    <div class="right">
+        Float Right
+    </div>
+
+    <div class="clear">
+        Clear Both <br>
+        This section starts below both floated boxes.
+    </div>
+    <div class="fixed">
+        Fixed Button
+    </div>
+
+    <div class="space"></div>
+
+</body>
+</html>

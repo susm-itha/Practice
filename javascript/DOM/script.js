@@ -1,0 +1,10 @@
+console.log(document)
+let h1 = document.getElementById("heading")
+let h4 = document.getElementById("text")
+console.log(h4)
+console.log(h1)
+let c = document.getElementsByClassName("h1")
+console.log(c)
+
+let E = document.getElementsByTagName("h1")
+console.log(E)

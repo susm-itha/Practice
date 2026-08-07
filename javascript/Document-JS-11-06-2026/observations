@@ -1,0 +1,35 @@
+//Normal Object Copy (=)
+// Observation
+// No new object is created.
+// Both variables point to the same memory location.
+// Changes in one object affect the other object.
+ 
+// Shallow Copy Using Spread Operator
+// Observation
+// Creates a new outer object.
+// Nested objects are shared by reference.
+// Changes to top-level properties do not affect the original object.
+// Changes to nested properties affect both objects.
+
+// Shallow Copy Using Object.assign()
+// Observation
+// Creates a new object.
+// Copies only first-level properties.
+// Nested objects remain shared.
+
+//Deep Copy Using JSON Methods
+// Observation
+// Creates a completely independent copy.
+// Nested objects are copied separately.
+// Changes in the copied object do not affect the original object.
+
+// Deep Copy Using structuredClone
+// Observation
+// Creates a true deep copy.
+// Copies nested objects and arrays completely.
+// Original and copied objects are fully independent.
+
+Conclusion
+// Normal Copy shares the same object reference.
+// Shallow Copy creates a new outer object but shares nested object references.
+// Deep Copy creates a fully independent object, including all nested objects and arrays.

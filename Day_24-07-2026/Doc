@@ -1,0 +1,50 @@
+// Conditional Rendering Approaches Comparison
+// Approach	   Syntax	           Best For	         Advantages           	Disadvantages
+// if-else    if(condition){}     Multiple conditions   Easy to understand       More code
+// Ternary    condition ? A : B   Two choices           Short and clean        Hard to read if nested
+// Operator
+// Logical &&   condition &&      Show only when true    Very simple            No else condition
+//              <Component />
+// Switch Case  switch(value){}   Multiple fixed values   Organized            Longer code
+
+// if-else
+if (isLogin) {
+  return <h2>Welcome</h2>;
+} else {
+  return <h2>Please Login</h2>;
+}
+
+// Ternary
+{isLogin ? 
+<h2>Welcome</h2> : 
+<h2>Please Login</h2>}
+
+// Logical &&
+{isLogin && <h2>Welcome</h2>}
+
+// Switch
+switch(role){
+  case "Admin":
+    return <h2>Admin Panel</h2>;
+  case "User":
+    return <h2>User Panel</h2>;
+  default:
+    return <h2>Guest</h2>;
+}
+
+// Fetch API vs Axios
+// Feature	Fetch                    API	                 Axios
+// Installation                 Not required             npm install axios
+// JSON Conversion             response.json()               Automatic
+// Error Handling                Manual                     Automatic
+// Request Cancellation         Difficult                     Easy
+// Best For                    Small projects               Large projects
+
+// Fetch
+fetch(url)
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+// Axios
+axios.get(url)
+.then(res => console.log(res.data));
