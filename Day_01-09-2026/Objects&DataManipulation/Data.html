@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dashboard</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>Car Dashboard</h1>
+                <p>Welcome to your car management app</p>
+            </div>
+
+            <div class="status">
+                🟢 Online
+            </div>
+        </div>
+
+
+        <!-- Car Card -->
+        <div class="car-card">
+
+            <div class="car-icon">
+            🚘
+            </div>
+
+            <div class="car-info">
+                <h2>BMW X5</h2>
+                <p>Premium SUV</p>
+
+                <button onclick="showDetails()">
+                    View Car Details
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Cards -->
+        <div class="cards">
+
+            <div class="card blue">
+                <h3> Engine</h3>
+                <h2>335 HP</h2>
+                <p>Petrol Engine</p>
+            </div>
+
+            <div class="card green">
+                <h3>Fuel</h3>
+                <h2>75%</h2>
+                <p>Good Level</p>
+            </div>
+
+            <div class="card orange">
+                <h3>Mileage</h3>
+                <h2>12 km/L</h2>
+                <p>Average</p>
+            </div>
+
+            <div class="card purple">
+                <h3> Year</h3>
+                <h2>2024</h2>
+                <p>Manufactured</p>
+            </div>
+
+        </div>
+
+
+        <!-- Details Section -->
+        <div id="details" class="details">
+
+            <h2> Car Details</h2>
+
+            <p class="message">
+                Click "View Car Details" to see complete information.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="Data.js"></script>
+
+</body>
+</html>
