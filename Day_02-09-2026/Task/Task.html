@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Custom Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <header>
+            <h1>Mini Custom Store</h1>
+            <p>Create your own custom items</p>
+        </header>
+
+        <section class="form-box">
+
+            <h2>Add Custom Item</h2>
+
+            <input type="text" id="itemName" placeholder="Item name">
+            <input type="number" id="itemPrice" placeholder="Price">
+            
+            <select id="itemColor">
+                <option value="">Choose Color</option>
+                <option value="Pink">Pink</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Purple">Purple</option>
+            </select>
+
+            <button onclick="addItem()">Add Item</button>
+
+            <p id="message"></p>
+
+        </section>
+
+        <section>
+            <h2 class="title">My Items</h2>
+
+            <div id="itemList" class="items"></div>
+        </section>
+
+    </div>
+
+    <script src="Task.js"></script>
+</body>
+</html>
