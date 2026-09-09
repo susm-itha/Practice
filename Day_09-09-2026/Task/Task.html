@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+        }
+
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 25px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .stat-card h2 {
+            margin: 5px;
+            color: #2563eb;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            flex: 1;
+        }
+
+        .cars {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .car-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .car-icon {
+            font-size: 45px;
+            text-align: center;
+        }
+
+        .car-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .price {
+            color: #16a34a;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .unavailable {
+            color: red;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 800px) {
+            .cars {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚗 Car Dashboard</h1>
+    <p>Manage and view your cars</p>
+</header>
+
+<div class="container">
+
+    <div class="stats">
+        <div class="stat-card">
+            <p>Total Cars</p>
+            <h2 id="totalCars">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <p>Available Cars</p>
+            <h2 id="availableCars">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <p>Total Value</p>
+            <h2 id="totalValue">$0</h2>
+        </div>
+    </div>
+
+    <div class="controls">
+        <input
+            type="text"
+            id="search"
+            placeholder="Search car..."
+        >
+
+        <select id="fuelFilter">
+            <option value="all">All Fuel Types</option>
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Electric">Electric</option>
+        </select>
+    </div>
+
+    <div class="cars" id="carList"></div>
+
+</div>
+
+<script src="Task.js"></script>
+
+</body>
+</html>
